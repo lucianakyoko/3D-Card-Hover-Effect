@@ -8,6 +8,7 @@
   border-radius: $border-radius;
   width: 100%;
   padding: 2rem 0;
+  margin-top: -5rem;
 
   @include flex-box-center;
   flex-direction: column;
@@ -90,4 +91,10 @@
     width: 80%;
     margin: auto;
   } 
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: 0rem;
+  }
 }

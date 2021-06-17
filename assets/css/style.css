@@ -164,6 +164,7 @@
   border-radius: 8px;
   width: 100%;
   padding: 2rem 0;
+  margin-top: -5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,6 +276,12 @@
   .card-container {
     width: 80%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: 0rem;
   }
 }
 
