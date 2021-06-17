@@ -10,8 +10,46 @@
   animation-timing-function: ease-in-out;
 }
 
+.mario-animation {
+  width: 80%;
+  
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+
 @keyframes cloud{
   from { left: 5%; }
 
   to { left: 30%; }
+}
+
+
+@keyframes jump {
+  from { transform: translateY(-30px); }
+
+  to { transform: translateY(50px); }
+}
+
+//MEDIA QUERIES:
+@media screen and (max-width: 960px){
+  .cloud-animation {
+    width: 30%;
+    top: 90px;
+
+    filter: drop-shadow(0px 150px 12px rgba(0, 0, 0, 0.4));
+  }
+
+  .mario-animation {
+    width: 50%;
+  }
+
+  @keyframes jump {
+    from { transform: translateY(0px); }
+  
+    to { transform: translateY(40px); }
+  }
 }

@@ -1,0 +1,107 @@
+.about {
+  width: 90%;
+  margin: 0 auto;
+
+  @include flex-box;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__img {
+    margin-left: 8rem;
+
+    @include flex-box;
+    flex-direction: column;
+
+    .block {
+      position: relative;
+      top: -4rem;
+      width: 60%;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    margin-right: 3rem;
+
+    @include flex-box-center;
+    flex-direction: column;
+
+    &__txt-box {
+      margin-top: -8rem;
+    }
+
+    & p{
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.5;
+
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__btn {
+    width: 20rem;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    text-decoration: none;
+    color: $color-black;
+
+    @include flex-box-center;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    transition: all .8s ease;
+
+    span {
+      font-size: 1.2rem;
+      padding-left: 1rem;
+    }
+
+    &:hover {
+      background: $color-blue;
+    }
+  }
+}
+
+
+//MEDIA QUERIES:
+@media screen and (max-width: 960px) {
+  .about {
+    width: 100%;
+    flex-direction: column;
+
+    &__text {
+      width: 85%;
+      margin: 0 auto;
+
+      @include flex-box-center;
+      flex-direction: column;
+
+      &__txt-box {
+        margin-top: 0;
+      }
+
+      & p {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.5;
+  
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__img {
+      margin: auto;
+      .block {
+        top: 1rem;
+        width: 40%;
+
+      }
+    }
+
+    &__btn {
+      margin-bottom: 2.8rem;
+    }
+  }
+}
