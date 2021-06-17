@@ -25,7 +25,7 @@
     
     &:hover {
       background-color: $color-green;
-      border-radius: 8px;
+      border-radius: $border-radius;
       box-shadow: $box-shadow;
     }
   }

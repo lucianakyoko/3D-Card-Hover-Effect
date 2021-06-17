@@ -33,3 +33,54 @@ body {
   background-color: $color-yellow;
   font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+  width: 90%;
+  margin: 4rem auto 0 auto;
+
+  @include flex-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__left {
+    width: 40%;
+    margin-left: 5rem;
+
+    .logo {
+      width: 100%;
+    }
+
+    .paragraph {
+      font-size: 1.2rem;
+      line-height: 1.6;
+
+      & a {
+        text-decoration:none;
+        font-weight: 600;
+        color: $color-black;
+        border-radius: $border-radius;
+        padding: .5rem;
+        transition: all .5s ease;
+
+        &:hover {
+          box-shadow: $box-shadow;
+        }
+      }
+    }
+
+    .social-media a {
+      text-decoration: none;
+    }
+
+    .social-media img {
+      padding: .8rem;
+      transition: all .5s ease-in;
+
+      &:hover {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+
+}
