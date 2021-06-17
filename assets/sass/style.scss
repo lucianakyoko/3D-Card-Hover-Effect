@@ -83,4 +83,25 @@ body {
     }
   }
 
+  &__right {
+    width: 70%;
+    margin-top: 10em;
+  }
+}
+
+//MEDIA QUERIES:
+@media screen and (max-width: 768px) {
+  .container {
+    &__left {
+      .left__paragraph {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  
+    &__right {
+      width: 100%;
+      margin-top: 3em;
+    }
+  }
 }
