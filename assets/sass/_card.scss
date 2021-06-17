@@ -1,0 +1,93 @@
+.card-container {
+  width: 50%;
+  margin: auto;
+}
+
+.card {
+  background-color: $color-red;
+  border-radius: $border-radius;
+  width: 100%;
+  padding: 2rem 0;
+
+  @include flex-box-center;
+  flex-direction: column;
+
+  transform-style: preserve-3d;
+
+  &__mario {
+    position: relative;
+
+    & .circle {
+      width: 10rem; height: 10rem;
+      border-radius: 50%;
+      background-color: $color-green;
+
+      position: absolute;
+      z-index: 1;
+    }
+
+    & .img {
+      position: relative;
+      z-index: 2;  
+      transition: $transition; 
+    }
+  }
+
+  &__info {
+    margin-top: 1rem;
+    display: flex;
+
+    @include flex-box-center;
+    flex-direction: column;
+
+    & .name {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $color-white;
+
+      transition: $transition; 
+    }
+
+    & .detail {
+      @include flex-box-center;
+      margin-top: 1.6rem;
+
+      &__img {
+        transition: $transition; 
+      }
+
+      &__description {
+        padding: 1rem;
+        transition: $transition; 
+      }
+
+      &__item-p {
+        font-size: 1rem;
+        font-weight: 200;
+        color: $color-white;
+        margin-bottom: .5rem;
+      }
+      
+      &__item-name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+//MEDIA QUERIES:
+@media screen and (max-width: 1000px) {
+  .card-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .card-container {
+    width: 80%;
+    margin: auto;
+  } 
+}

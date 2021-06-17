@@ -4,6 +4,7 @@ $color-green: #43B047;
 $color-black: #000;
 $color-blue: #049CD8;
 $color-red: #E52521;
+$color-white: #FFF;
 
 $box-shadow: 18px 18px 24px rgba(0, 0, 0, 0.25);
 $drop-shadow: drop-shadow(-40px 64px 20px rgba(0, 0, 0, 0.5));
@@ -21,7 +22,7 @@ $border-radius: 8px;
   align-items: center;
 }
 
-@import 'navbar';
+@import 'navbar', 'card';
 
 * {
   margin: 0; padding: 0;
@@ -39,7 +40,6 @@ body {
   margin: 4rem auto 0 auto;
 
   @include flex-box;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   &__left {
