@@ -175,6 +175,41 @@
   }
 }
 
+.cloud-animation {
+  position: absolute;
+  top: 30px;
+  -webkit-filter: drop-shadow(0px 400px 12px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 400px 12px rgba(0, 0, 0, 0.25));
+  -webkit-animation-name: cloud;
+          animation-name: cloud;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes cloud {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes cloud {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

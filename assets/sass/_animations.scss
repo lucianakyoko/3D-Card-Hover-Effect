@@ -1,0 +1,17 @@
+.cloud-animation {
+  position: absolute;
+  top: 30px;
+  filter: drop-shadow(0px 400px 12px rgba(0, 0, 0, 0.25));
+
+  animation-name: cloud;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes cloud{
+  from { left: 5%; }
+
+  to { left: 30%; }
+}
