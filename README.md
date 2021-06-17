@@ -2,7 +2,7 @@
  ## Efeito 3D no cartão usando JavaScript
  
  Essa semana me desafiei desenvolver uma página simples com efeito 3D.
-O resultado pode ser conferido neste link: 
+O resultado pode ser conferido neste link: [aqui](https://supermario-3dcard.netlify.app).
 
 ### No HTML:
 - utilizei a metodologia BEM para manter as classes organizadas;
@@ -19,4 +19,4 @@ O resultado pode ser conferido neste link:
 
 O layout foi todo desenvolvido no Figma.
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Preview da página](https://github.com/lucianakyoko/3D-Card-Hover-Effect/blob/main/3deffect.gif)
